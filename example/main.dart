@@ -1,3 +1,7 @@
+import 'package:pk_prompter/src/terminal.dart';
+
 void main(List<String> args) {
-  print("Hello world");
+  Terminal terminal = Terminal();
+  terminal.clearScreen();
+  terminal.printPrompt("Hello there");
 }
