@@ -1,3 +1,8 @@
 name: pk_prompter
 version: 0.0.1
 description: Library to create CLI wizards
+author: Pankaj Koirala <koiralapankaj007@gmail.com>
+homepage: https://www.google.com
+
+environment:
+  sdk: '<5.0.0'
