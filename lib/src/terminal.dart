@@ -2,6 +2,9 @@ import 'dart:io';
 import 'option.dart';
 
 class Terminal {
+  //constant constructor
+  const Terminal();
+
   void printPrompt(String prompt) {
     stdout.writeln(prompt);
   }
