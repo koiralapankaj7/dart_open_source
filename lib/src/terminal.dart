@@ -1,8 +1,22 @@
 import 'dart:io';
+import 'option.dart';
 
 class Terminal {
   void printPrompt(String prompt) {
     stdout.writeln(prompt);
+  }
+
+  void printOptions(List<Option> options) {
+    // for (int i = 0; i < options.length; i++) {
+    //   stdout.writeln('[$i] - ${options[i].label}');
+    // }
+
+    options.asMap().forEach((index, option) {
+      stdout.writeln('[$index] - ${option.label}');
+    });
+
+    stdout.writeln('Enter a choice\n');
+    stdout.write('>');
   }
 
   String collectInput() {
